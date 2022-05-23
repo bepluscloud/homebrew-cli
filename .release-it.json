@@ -1,0 +1,15 @@
+{
+  "name": "@bepluscloud/cli",
+  "git": {
+    "requireBranch": "main",
+    "commitMessage": "beplus CLI release v${version}",
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "v${version}",
+    "assets": [
+      ".release/*.tar.gz"
+    ]
+  }
+}

@@ -1,21 +1,21 @@
 class Beplus < Formula
   desc "CLI tool for managing your beplus.cloud resources"
   homepage "https://beplus.cloud/cli"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.8.0/beplus-cli-v0.8.0-macos-arm64.tar.gz"
-      sha256 "f808ba31759174f34ab65c187e2e564970bac1d2c1d9f6255f0eee722e844e7a"
+      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.9.0/beplus-cli-v0.9.0-macos-arm64.tar.gz"
+      sha256 "e056339739ccaee2a01058226fe7529761e3bb707e130531ad978d535aa5798c"
 
       def install
         bin.install "beplus"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.8.0/beplus-cli-v0.8.0-macos-x64.tar.gz"
-      sha256 "8a94daaefd851be3178c6308625e77f406a2088fe66e3565740b6c934325935c"
+      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.9.0/beplus-cli-v0.9.0-macos-x64.tar.gz"
+      sha256 "10353cfa2a24b4fca4fe1f26e8847d24de70200f5f6b089898a3ad6a552ecb8e"
 
       def install
         bin.install "beplus"
@@ -25,16 +25,16 @@ class Beplus < Formula
   
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.8.0/beplus-cli-v0.8.0-linux-arm64.tar.gz"
-      sha256 "9ccb8597c78d7565b7048f67f212ecb60fea60ff007a4ae80413ef8761f4ae7f"
+      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.9.0/beplus-cli-v0.9.0-linux-arm64.tar.gz"
+      sha256 "04c5b89ce240163daf62724e774931f2fd013f64b93b161a99e09f8400c963db"
 
       def install
         bin.install "beplus"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.8.0/beplus-cli-v0.8.0-linux-x64.tar.gz"
-      sha256 "d02056f63a54e8d6f32f7c8c95335191e3666e574e8346859e5f6a99240b31d5"
+      url "https://github.com/bepluscloud/homebrew-cli/releases/download/v0.9.0/beplus-cli-v0.9.0-linux-x64.tar.gz"
+      sha256 "514c1bc157030016b3ccb71e674672694cce0d7c201e6f8fdb1b63362be921aa"
 
       def install
         bin.install "beplus"
